@@ -11,7 +11,7 @@ const LandingPage = () => {
 
       {/* Your code goes here */}
 
-      <Sample />
+      {/* <Sample /> */}
     </div>
   )
 }
