@@ -1,6 +1,8 @@
 import React from 'react'
 import Sample from '../Components/Sample'
 import { Helmet } from 'react-helmet-async'
+import Footer from '../Components/Footer'
+import PictureGallery from '../Components/PictureGallery'
 
 const LandingPage = () => {
   return (
@@ -10,7 +12,8 @@ const LandingPage = () => {
       </Helmet>
 
       {/* Your code goes here */}
-
+      <PictureGallery />
+      <Footer />
       {/* <Sample /> */}
     </div>
   )
