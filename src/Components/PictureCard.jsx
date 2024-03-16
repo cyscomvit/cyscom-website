@@ -49,7 +49,7 @@ const PictureCard = () => {
             alt={activeMenu==image.text|| activeMenu=="All" ?image.text:null}
           />
         {moused && (
-          <p className="text-center text-black font-bold transform-150 absolute ">
+          <p className="pointer-events-none text-center text-black font-bold transform-150 absolute ">
             {activeMenu==image.text || activeMenu=="All" ?image.text:null}
           </p>
         )}
