@@ -29,7 +29,7 @@ a {
 .nav-buttons .icon-container {
   align-items: center;
   background-color: #bbb;
-  height: 22px;
+  height: 50px;
   padding: 15px;
   margin: 11px 0;
   margin-right: 15px;
@@ -57,7 +57,7 @@ a {
   padding-bottom: 13px;
   padding-left: 36px;
   padding-right: 35px;
-  border-radius: 14px;
+  border-radius: 25px;
   margin: 12px 0;
   overflow: hidden;
   justify-content: center;
@@ -87,7 +87,7 @@ a {
   display: none;
 }
 .mode-button {
-  height: 18px;
+  height: fit-content;
   padding: 4px 12px;
   border-radius: 50px;
 }
@@ -99,7 +99,7 @@ a {
 }
 .mode-active {
   background-color: black !important;
-  height: 18px;
+  height: fit-content;
   padding: 4px 12px;
 }
 .mode-active svg {
