@@ -5,8 +5,8 @@ import GalleryHeading from './GalleryHeading'
 const PictureGallery = () => {
   return (
     <div>
-    <GalleryHeading />
-    <PictureCard />
+      <GalleryHeading />
+      <PictureCard />
     </div>
   )
 }
