@@ -18,10 +18,10 @@ import open_source_icon_mobile from '../assets/nav/nav-mobile/nav_open_source_ic
 
 function Navbar() {
   // Function to toggle dark mode
-  const [darkMode, setDarkMode] = useState(false)
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
+  // const [darkMode, setDarkMode] = useState(false)
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode)
+  // }
 
   // Function to open hamburger menu and window containing navigation options
   const [isOpen, setIsOpen] = useState(false)
@@ -95,17 +95,20 @@ function Navbar() {
                 <img src={our_team_icon} alt="" />
               </div>
             </a>
-            <a href="/leaderboard">
+            <a href="https://opensrc.cyscomvit.com/leaderboard">
               <div className="icon-container">
                 <img src={leaderboard_icon} alt="" />
               </div>
             </a>
-            <a href="/blogs">
+            <a href="https://blog.cyscomvit.com/">
               <div className="icon-container">
                 <img src={blogs_icon} alt="" />
               </div>
             </a>
-            <a href="/open-source" className="open-source-button">
+            <a
+              href="https://github.com/cyscomvit/"
+              className="open-source-button"
+            >
               <div className="icon-container-os">
                 <img src={open_source_icon} alt="" />
               </div>
@@ -114,7 +117,7 @@ function Navbar() {
           </div>
         </div>
         <div className="mode-toggle">
-          <div className="toggle-button-container">
+          {/* <div className="toggle-button-container">
             <div
               className={darkMode ? 'mode-button' : 'mode-button mode-active'}
               onClick={toggleDarkMode}
@@ -143,7 +146,7 @@ function Navbar() {
                 <path d="M11.819 1.27982L10.5999 1.97979L11.819 2.67975L12.4858 3.95957L13.1525 2.67975L14.3717 1.97979L13.1525 1.27982L12.4858 0L11.819 1.27982ZM7.18156 2.00936C6.06344 2.24753 5.01997 2.77595 4.14643 3.54637C3.27288 4.31679 2.5971 5.30466 2.18079 6.41979C1.76448 7.53491 1.6209 8.74175 1.76317 9.93011C1.90543 11.1185 2.32901 12.2505 2.99522 13.2228C3.66143 14.1951 4.54904 14.9767 5.57702 15.4963C6.60499 16.0158 7.74056 16.2567 8.88005 16.197C10.0195 16.1374 11.1266 15.7789 12.1002 15.1546C13.0738 14.5302 13.8829 13.6597 14.4536 12.6226C12.4262 12.606 10.4872 11.7489 9.05911 10.238C7.63107 8.72711 6.82976 6.68491 6.82982 4.55646C6.82982 3.67815 6.94166 2.82045 7.18156 2.00936ZM0 9.03764C0 4.08773 3.82214 0.0752838 8.53728 0.0752838H10.0176L9.27661 1.41964C8.7823 2.31587 8.53728 3.38239 8.53728 4.55646C8.53715 5.48283 8.73244 6.39773 9.10913 7.23545C9.48582 8.07317 10.0346 8.81292 10.7159 9.40157C11.3973 9.99022 12.1944 10.4132 13.0499 10.64C13.9055 10.8669 14.7983 10.892 15.6642 10.7136L17.1002 10.4205L16.6366 11.8778C15.5054 15.4341 12.3082 18 8.53728 18C3.82214 18 0 13.9876 0 9.03764ZM15.794 4.03306L16.5743 5.52978L18 6.34893L16.5743 7.16809L15.794 8.66481L15.0137 7.16809L13.5879 6.34893L15.0137 5.52978L15.794 4.03306Z" />
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="nav-mobile-window">
@@ -167,7 +170,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/leaderboard">
+                <a href="https://opensrc.cyscomvit.com/leaderboard">
                   <div>
                     <img src={leaderboard_icon_mobile} alt="" />
                   </div>
@@ -175,7 +178,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/blogs">
+                <a href="https://blog.cyscomvit.com/">
                   <div>
                     <img src={blogs_icon_mobile} alt="" />
                   </div>
@@ -183,7 +186,7 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="/open-source">
+                <a href="https://github.com/cyscomvit/">
                   <div>
                     <img src={open_source_icon_mobile} alt="" />
                   </div>
@@ -191,7 +194,7 @@ function Navbar() {
                 </a>
               </li>
             </ul>
-            <div className="mode-toggle-mobile">
+            {/* <div className="mode-toggle-mobile">
               <div className="toggle-button-container">
                 <div
                   className={
@@ -226,7 +229,7 @@ function Navbar() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </nav>
         )}
       </div>
