@@ -76,32 +76,32 @@ const pictures = [
   },
   {
     id: 16,
-    imgURL: 'assets/images/events/icrtac2018/3.jpg',
+    imgURL: 'assets/images/events/icrtac2018/3.JPG',
     text: 'ICRTAC 2018',
   },
   {
     id: 17,
-    imgURL: 'assets/images/events/icrtac2018/4.jpg',
+    imgURL: 'assets/images/events/icrtac2018/4.JPG',
     text: 'ICRTAC 2018',
   },
   {
     id: 18,
-    imgURL: 'assets/images/events/icrtac2018/5.jpg',
+    imgURL: 'assets/images/events/icrtac2018/5.JPG',
     text: 'ICRTAC 2018',
   },
   {
     id: 19,
-    imgURL: 'assets/images/events/icrtac2019/1.jpg',
+    imgURL: 'assets/images/events/icrtac2019/1.JPG',
     text: 'ICRTAC 2019',
   },
   {
     id: 20,
-    imgURL: 'assets/images/events/icrtac2019/2.jpg',
+    imgURL: 'assets/images/events/icrtac2019/2.JPG',
     text: 'ICRTAC 2019',
   },
   {
     id: 21,
-    imgURL: 'assets/images/events/icrtac2019/3.jpg',
+    imgURL: 'assets/images/events/icrtac2019/3.JPG',
     text: 'ICRTAC 2019',
   },
   {
