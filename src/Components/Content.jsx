@@ -1,4 +1,3 @@
-import React from 'react'
 import './Content.css'
 
 import contentImage from '../assets/lock_pass.png'

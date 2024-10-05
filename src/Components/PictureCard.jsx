@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import pictures from './Pictures.jsx'
 
 //The menu items
@@ -29,7 +29,7 @@ const PictureCard = () => {
         onClick={handleClick}
         className={
           activeMenu == text
-            ? 'bg-stone-950 text-white rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-stone-700  text-[#6C6C6C] px-4 py-2'
+            ? 'bg-stone-950 rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-stone-700  text-[#6C6C6C] px-4 py-2'
             : 'hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-[#6C6C6C] hover:text-white hover:rounded text-[#6C6C6C] px-4 py-2'
         }
         key={text}
@@ -40,7 +40,7 @@ const PictureCard = () => {
   }
 
   //Creates each picture card in the gallery
-  function createPictureCard(image) {
+  function useCreatePictureCard(image) {
     const [moused, setMoused] = useState(false)
 
     function mousedOver() {
@@ -87,11 +87,10 @@ const PictureCard = () => {
         {MenuItems.map(createPictureMenu)}
       </div>
       <div className="flex flex-wrap text-center justify-center ">
-        {pictures.map(createPictureCard)}
+        {pictures.map(useCreatePictureCard)}
       </div>
     </div>
   )
 }
 
 export default PictureCard
-export { pictures }
