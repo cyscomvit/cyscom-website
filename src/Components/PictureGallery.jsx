@@ -1,4 +1,3 @@
-import React from 'react'
 import PictureCard from './PictureCard'
 import GalleryHeading from './GalleryHeading'
 
