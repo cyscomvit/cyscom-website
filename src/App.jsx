@@ -1,5 +1,3 @@
-import React from 'react'
-
 import LandingPage from './Pages/LandingPage'
 import Navbar from './Components/Navbar.jsx'
 import Content from './Components/Content.jsx'

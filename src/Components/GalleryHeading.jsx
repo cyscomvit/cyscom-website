@@ -1,5 +1,3 @@
-import React from 'react'
-
 const GalleryHeading = () => {
   return (
     <section className="flex flex-col justify-center text-center p-8">
