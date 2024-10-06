@@ -29,7 +29,7 @@ const OurMission = () => {
   ]
 
   return (
-    <div className="flex sm:flex-col-reverse md:flex-row justify-between gap-2 max-w-7xl mx-auto mt-8 mb-14 px-4">
+    <div className="flex md:flex-col-reverse lg:flex-row justify-between gap-2 max-w-7xl mx-auto mt-8 mb-14 px-4">
       <div className="grid sm:grid-cols-1 grid-cols-2 gap-6 sm:mx-10">
         {missions.map((v, i) => (
           <HoverCard key={i} dropped={i % 2 !== 0}>
@@ -46,10 +46,10 @@ const OurMission = () => {
         ))}
       </div>
 
-      <div className="flex flex-col sm:items-center items-end">
+      <div className="flex flex-col md:items-center items-end">
         <h1 className="font-bold text-7xl">Our</h1>
         <h1 className="text-7xl font-bold text-[#6C6C6C]">Mission</h1>
-        <p className="w-80 sm:text-center text-end">
+        <p className="w-80 md:text-center text-end">
           The Cybersecurity Student Community (CYSCOM). VITCC aims to spread
           awareness about cybersecurity.
         </p>
