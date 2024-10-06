@@ -41,17 +41,19 @@ const getPosition = (index) => {
         <circle cx="1158.5" cy="15.5" r="15.5" fill="#88B7FD" />
       </svg>
 
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+      <div className="absolute top-0 left-0 w-full h-full">
         {timelineData.map((item, index) => (
           <div
             key={index}
-            className="absolute flex items-center bg-white rounded-lg w-full max-w-64 lg:max-w-60 p-2 space-x-2 select-none"
+            className="absolute w-full max-w-64 lg:max-w-60 z-20"
             style={getPosition(index)}
           >
-            <img src={item.img} alt="logo" />
-            <div className="flex flex-col">
-                <h1 className='font-bold text-sm lg:text-xs'>{item.label}</h1>
-                <span className='text-xs lg:text-[9px]'>{item.desc}</span>
+            <div className="flex items-center bg-white rounded-lg space-x-2 p-1.5 cursor-pointer hover:scale-105 select-none transition-all duration-300">
+              <img src={item.img} alt="logo" />
+              <div className="flex flex-col">
+                  <h1 className='font-bold text-sm lg:text-xs'>{item.label}</h1>
+                  <span className='text-xs lg:text-[9px]'>{item.desc}</span>
+              </div>
             </div>
           </div>
         ))}

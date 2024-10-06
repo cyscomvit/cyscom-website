@@ -15,8 +15,8 @@ const OurJourney = () => {
   ];
 
   return (
-    <div className='relative bg-gradient-to-t from-[#064BAF] via-[#064BAF] to-[#508BE0E8] w-full pt-20 pb-44'>
-        <div className="flex flex-row-reverse lg:flex-col-reverse max-w-7xl mx-auto w-full md:justify-center">
+    <div className='relative bg-gradient-to-t from-[#064BAF] via-[#064BAF] to-[#508BE0E8] w-full pt-28 pb-44'>
+        <div className="flex flex-row-reverse lg:flex-col-reverse max-w-7xl mx-auto w-full md:justify-center min-h-[35rem]">
           <div className="w-full md:hidden px-36">
             <Timeline timelineData={timelineData} />
           </div>
@@ -27,12 +27,14 @@ const OurJourney = () => {
 
               {
                 timelineData.map((item , index)=>(
-                  <div key={index} className={`flex justify-start bg-white rounded-lg p-2 mx-4 w-full translate-y-1 translate-x-1.5`}>
-                    <div className="absolute rounded-full size-8 bg-[#88B7FD] -translate-x-11"></div>
-                    <img className='mr-2' src={item.img} alt={`timeline_logo_${index}`} />
-                    <div className="flex flex-col">
-                      <h1 className='font-bold'>{item.label}</h1>
-                      <span className='text-xs'>{item.desc}</span>
+                  <div key={index} className="flex">
+                    <div className="absolute rounded-full size-8 bg-[#88B7FD] -translate-x-3.5 translate-y-3.5"></div>
+                    <div className="flex justify-start bg-white rounded-lg p-2 mx-4 w-full translate-x-4 hover:scale-105 transition-all duration-300 select-none cursor-pointer">
+                      <img className='mr-2' src={item.img} alt={`timeline_logo_${index}`} />
+                      <div className="flex flex-col">
+                        <h1 className='font-bold'>{item.label}</h1>
+                        <span className='text-xs'>{item.desc}</span>
+                      </div>
                     </div>
                   </div>
                 ))
@@ -41,7 +43,7 @@ const OurJourney = () => {
             </div>
           </div>
 
-          <div className="flex flex-col max-w-7xl mx-auto absolute lg:top-0 top-20 lg:relative w-full md:w-fit md:items-center px-5">
+          <div className="flex flex-col max-w-7xl mx-auto absolute lg:top-0 top-28 lg:relative w-full md:w-fit md:items-center px-5">
               <h1 className="font-bold text-7xl text-[#BCD7FF]">Our</h1>
               <h1 className="text-7xl font-bold text-white">Journey</h1>
               <p className='w-1/2 md:w-full mt-4 text-sm text-[#88B7FD]'>The Cybersearity Student Community (CYSCOM) was formed in 2022 and ever Since it has had one aim only. spreading
