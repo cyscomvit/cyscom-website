@@ -1,22 +1,18 @@
-import React from 'react';
-
-const Timeline = ({timelineData}) => {
-
-  
-const getPosition = (index) => {
+const Timeline = ({ timelineData }) => {
+  const getPosition = (index) => {
     const positions = [
-      { x: '1.3%', y: '106%' }, 
+      { x: '1.3%', y: '106%' },
       { x: '50.1%', y: '92.6%' },
       { x: '52.3%', y: '3.5%' },
       { x: '98.5%', y: '32.2%' },
-    ];
+    ]
 
     return {
       left: positions[index].x,
       top: positions[index].y,
       transform: 'translate(-50%, -50%)',
-    };
-  };
+    }
+  }
 
   return (
     <div className="relative w-full max-w-full mx-auto p-6 mt-20 lg:mt-32">
@@ -51,16 +47,15 @@ const getPosition = (index) => {
             <div className="flex items-center bg-white rounded-lg space-x-2 p-1.5 cursor-pointer hover:scale-105 select-none transition-all duration-300">
               <img src={item.img} alt="logo" />
               <div className="flex flex-col">
-                  <h1 className='font-bold text-sm lg:text-xs'>{item.label}</h1>
-                  <span className='text-xs lg:text-[9px]'>{item.desc}</span>
+                <h1 className="font-bold text-sm lg:text-xs">{item.label}</h1>
+                <span className="text-xs lg:text-[9px]">{item.desc}</span>
               </div>
             </div>
           </div>
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-
-export default Timeline;
+export default Timeline
