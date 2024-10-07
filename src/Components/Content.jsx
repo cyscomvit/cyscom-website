@@ -16,7 +16,11 @@ function Content() {
             <b>
               Think before
               <br />
-              you <span className="bg-clip-text text-transparent bg-[linear-gradient(145deg,_#528adb_42.81%,_#4c259e_57.76%)]">click</span>.
+              you{' '}
+              <span className="bg-clip-text text-transparent bg-[linear-gradient(145deg,_#528adb_42.81%,_#4c259e_57.76%)]">
+                click
+              </span>
+              .
             </b>
           </div>
           <div className="text-[#787878] text-[19.5px] sm:text-[14.5px] lg:text-2xl font-normal leading-[25px] sm:leading-[21px] lg:leading-[35px] mb-[60px] sm:mb-10 lg:mb-20 xl:mb-[45px] tracking-[-0.3px]">
