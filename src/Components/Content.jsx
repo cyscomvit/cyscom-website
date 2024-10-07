@@ -8,7 +8,7 @@ function Content() {
           <img
             src={contentImage}
             alt="lock_pass_icon"
-            className="w-[577px] sm:w-[95%] lg:w-[85%] xl:w-[90%] drop-shadow-[4px_4px_50px_#6ba0d2]"
+            className="w-[577px] sm:w-[95%] lg:w-[85%] xl:w-[90%] drop-shadow-[4px_4px_50px_#6ba0d2] hover:mx-auto"
           />
         </div>
         <div className="w-[45%] lg:w-full">
