@@ -29,8 +29,8 @@ const PictureCard = () => {
         onClick={handleClick}
         className={
           activeMenu == text
-            ? 'bg-stone-950 rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-stone-700  text-[#6C6C6C] px-4 py-2'
-            : 'hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-[#6C6C6C] hover:text-white hover:rounded text-[#6C6C6C] px-4 py-2'
+            ? 'bg-stone-950 rounded hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-stone-800  text-[#efefef] px-4 py-2'
+            : 'hover:duration-300 hover:ease-in-out hover:cursor-pointer hover:bg-[#2e2e2e] hover:text-white hover:rounded text-[#6C6C6C] px-4 py-2'
         }
         key={text}
       >
